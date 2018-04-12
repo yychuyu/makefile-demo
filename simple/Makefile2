@@ -1,0 +1,11 @@
+app: main.o fun1.o fun2.o
+	gcc main.o fun1.o fun2.o -o app
+
+main.o: main.c
+	gcc -c main.c -o main.o
+
+fun1.o: fun1.c
+	gcc -c fun1.c -o fun1.o
+
+fun2.o: fun2.c
+	gcc -c fun2.c -o fun2.o
